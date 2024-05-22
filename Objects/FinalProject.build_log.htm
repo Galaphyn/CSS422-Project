@@ -1,0 +1,267 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Rory Bray, University of Washington Bothell, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.39.0.0
+Toolchain Path:  D:\CS422Stuff\KeilArm\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.21
+Assembler:       Armasm.exe V6.21
+Linker/Locator:  ArmLink.exe V6.21
+Library Manager: ArmAr.exe V6.21
+Hex Converter:   FromElf.exe V6.21
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      UL2CM3.DLL V1.164.9.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\CS422Stuff\KeilProjects\FinalProject\FinalProject.uvprojx
+Project File Date:  05/11/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.21', folder: 'D:\CS422Stuff\KeilArm\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+driver_keil.c(12): warning: unused parameter 'signum' [-Wunused-parameter]
+   12 | void sig_handler1( int signum ) {
+      |                        ^
+driver_keil.c(12): warning: no previous prototype for function 'sig_handler1' [-Wmissing-prototypes]
+   12 | void sig_handler1( int signum ) {
+      |      ^
+driver_keil.c(12): note: declare 'static' if the function is not intended to be used outside of this translation unit
+   12 | void sig_handler1( int signum ) {
+      | ^
+      | static 
+driver_keil.c(16): warning: unused parameter 'signum' [-Wunused-parameter]
+   16 | void sig_handler2( int signum ) {
+      |                        ^
+driver_keil.c(16): warning: no previous prototype for function 'sig_handler2' [-Wmissing-prototypes]
+   16 | void sig_handler2( int signum ) {
+      |      ^
+driver_keil.c(16): note: declare 'static' if the function is not intended to be used outside of this translation unit
+   16 | void sig_handler2( int signum ) {
+      | ^
+      | static 
+driver_keil.c(20): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   20 | int main( ) {
+      |         ^
+      |           void
+driver_keil.c(26): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+   26 |         void* mem1 = _malloc( 1024 );
+      |               ^
+driver_keil.c(10): warning: no previous extern declaration for non-static variable 'alarmed' [-Wmissing-variable-declarations]
+   10 | int* alarmed;
+      |      ^
+driver_keil.c(10): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   10 | int* alarmed;
+      | ^
+7 warnings generated.
+compiling driver_keil.c...
+RTE/Device/TM4C129XNCZAD/system_TM4C129.c(14): warning: In file included from...
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129\TM4C129.h(54): warning: In file included from...
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(284): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  284 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(324): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  324 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(343): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  343 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(676): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  676 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(692): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  692 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(737): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  737 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(742): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  742 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(844): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  844 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(857): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  857 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(864): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  864 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(869): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  869 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(876): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  876 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(882): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  882 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(889): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  889 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(896): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  896 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(901): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  901 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(908): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  908 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(914): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  914 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(921): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  921 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(928): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  928 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(933): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  933 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(940): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  940 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(946): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  946 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(953): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  953 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(960): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  960 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(965): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  965 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(972): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  972 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(978): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  978 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(985): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  985 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(992): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  992 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(997): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  997 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(1004): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1004 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(1010): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1010 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(1017): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1017 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(1024): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1024 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(1029): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1029 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(1036): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1036 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(1042): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1042 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(1049): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1049 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(1056): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1056 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(1061): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1061 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(1068): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1068 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(1074): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1074 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(1291): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1291 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(1298): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1298 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(1334): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1334 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(1339): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1339 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(1344): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1344 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(1349): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1349 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(1354): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1354 |   union {
+      |   ^
+D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(1359): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1359 |   union {
+      |   ^
+51 warnings generated.
+compiling system_TM4C129.c...
+assembling stdlib.s...
+"timer.s", line 112: Warning: A1581W: Added 2 bytes of padding at address 0x66
+  112 00000068   END  
+0 Errors, 1 Warning
+assembling timer.s...
+assembling svc.s...
+assembling startup_TM4C129.s...
+"heap.s", line 410: Warning: A1581W: Added 2 bytes of padding at address 0x246
+  410 00000248   END
+0 Errors, 1 Warning
+assembling heap.s...
+linking...
+Program Size: Code=2304 RO-data=584 RW-data=4 ZI-data=24680  
+".\Objects\FinalProject.axf" - 0 Error(s), 58 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM::CMSIS@5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil::TM4C_DFP@1.1.0
+                Texas Instruments Tiva C Series Device Support and Examples
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  D:/CS422Stuff/KeilArm/Arm/Pack/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@5.6.0
+
+   * Component: Keil::Device:Startup@1.0.0
+      Source file:   Device/Source/ARM/startup_TM4C129.s
+      Include file:  Device/Include/TM4C129/TM4C129.h
+      Source file:   Device/Source/system_TM4C129.c
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>

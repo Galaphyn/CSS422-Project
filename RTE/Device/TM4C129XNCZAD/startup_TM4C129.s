@@ -276,6 +276,10 @@ SVC_Handler     PROC
 				PUSH 	{lr}
 				LDR 	R3, =_syscall_table_jump ;Load jump address
 				BLX 	R3 ;jump to jump
+				
+				MRS R1, PSP
+				STR R0, [R1]
+				
 				POP 	{lr}
 				BX 		lr ;Return from handler
 				
@@ -302,6 +306,8 @@ SysTick_Handler\
 		; Retrieve registers
 				POP 	{lr}
 		; Change from MSP to PSP
+				MRS R1, PSP
+				STR R0, [R1]
 		; Go back to the user program
 				BX 		lr
 		

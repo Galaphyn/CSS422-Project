@@ -27,41 +27,6 @@ Project File Date:  05/11/2024
 <h2>Output:</h2>
 *** Using Compiler 'V6.21', folder: 'D:\CS422Stuff\KeilArm\ARM\ARMCLANG\Bin'
 Rebuild target 'Target 1'
-driver_keil.c(12): warning: unused parameter 'signum' [-Wunused-parameter]
-   12 | void sig_handler1( int signum ) {
-      |                        ^
-driver_keil.c(12): warning: no previous prototype for function 'sig_handler1' [-Wmissing-prototypes]
-   12 | void sig_handler1( int signum ) {
-      |      ^
-driver_keil.c(12): note: declare 'static' if the function is not intended to be used outside of this translation unit
-   12 | void sig_handler1( int signum ) {
-      | ^
-      | static 
-driver_keil.c(16): warning: unused parameter 'signum' [-Wunused-parameter]
-   16 | void sig_handler2( int signum ) {
-      |                        ^
-driver_keil.c(16): warning: no previous prototype for function 'sig_handler2' [-Wmissing-prototypes]
-   16 | void sig_handler2( int signum ) {
-      |      ^
-driver_keil.c(16): note: declare 'static' if the function is not intended to be used outside of this translation unit
-   16 | void sig_handler2( int signum ) {
-      | ^
-      | static 
-driver_keil.c(20): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
-   20 | int main( ) {
-      |         ^
-      |           void
-driver_keil.c(26): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
-   26 |         void* mem1 = _malloc( 1024 );
-      |               ^
-driver_keil.c(10): warning: no previous extern declaration for non-static variable 'alarmed' [-Wmissing-variable-declarations]
-   10 | int* alarmed;
-      |      ^
-driver_keil.c(10): note: declare 'static' if the variable is not intended to be used outside of this translation unit
-   10 | int* alarmed;
-      | ^
-7 warnings generated.
-compiling driver_keil.c...
 RTE/Device/TM4C129XNCZAD/system_TM4C129.c(14): warning: In file included from...
 D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129\TM4C129.h(54): warning: In file included from...
 D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C129XNCZAD.h(284): warning: anonymous unions are a C11 extension [-Wc11-extensions]
@@ -219,17 +184,52 @@ D:/CS422Stuff/KeilArm/Arm/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C12
       |   ^
 51 warnings generated.
 compiling system_TM4C129.c...
-assembling stdlib.s...
-"timer.s", line 112: Warning: A1581W: Added 2 bytes of padding at address 0x66
-  112 00000068   END  
-0 Errors, 1 Warning
-assembling timer.s...
 assembling svc.s...
-assembling startup_TM4C129.s...
-"heap.s", line 410: Warning: A1581W: Added 2 bytes of padding at address 0x246
-  410 00000248   END
+"heap.s", line 409: Warning: A1581W: Added 2 bytes of padding at address 0x246
+  409 00000248   END
 0 Errors, 1 Warning
 assembling heap.s...
+assembling startup_TM4C129.s...
+driver_keil.c(12): warning: unused parameter 'signum' [-Wunused-parameter]
+   12 | void sig_handler1( int signum ) {
+      |                        ^
+driver_keil.c(12): warning: no previous prototype for function 'sig_handler1' [-Wmissing-prototypes]
+   12 | void sig_handler1( int signum ) {
+      |      ^
+driver_keil.c(12): note: declare 'static' if the function is not intended to be used outside of this translation unit
+   12 | void sig_handler1( int signum ) {
+      | ^
+      | static 
+driver_keil.c(16): warning: unused parameter 'signum' [-Wunused-parameter]
+   16 | void sig_handler2( int signum ) {
+      |                        ^
+driver_keil.c(16): warning: no previous prototype for function 'sig_handler2' [-Wmissing-prototypes]
+   16 | void sig_handler2( int signum ) {
+      |      ^
+driver_keil.c(16): note: declare 'static' if the function is not intended to be used outside of this translation unit
+   16 | void sig_handler2( int signum ) {
+      | ^
+      | static 
+driver_keil.c(20): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   20 | int main( ) {
+      |         ^
+      |           void
+driver_keil.c(26): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+   26 |         void* mem1 = _malloc( 1024 );
+      |               ^
+driver_keil.c(10): warning: no previous extern declaration for non-static variable 'alarmed' [-Wmissing-variable-declarations]
+   10 | int* alarmed;
+      |      ^
+driver_keil.c(10): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   10 | int* alarmed;
+      | ^
+7 warnings generated.
+compiling driver_keil.c...
+assembling stdlib.s...
+"timer.s", line 112: Warning: A1581W: Added 2 bytes of padding at address 0x62
+  112 00000064   END  
+0 Errors, 1 Warning
+assembling timer.s...
 linking...
 Program Size: Code=2304 RO-data=584 RW-data=4 ZI-data=24680  
 ".\Objects\FinalProject.axf" - 0 Error(s), 58 Warning(s).
@@ -258,9 +258,9 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE@5.6.0
 
    * Component: Keil::Device:Startup@1.0.0
+      Source file:   Device/Source/system_TM4C129.c
       Source file:   Device/Source/ARM/startup_TM4C129.s
       Include file:  Device/Include/TM4C129/TM4C129.h
-      Source file:   Device/Source/system_TM4C129.c
 Build Time Elapsed:  00:00:00
 </pre>
 </body>

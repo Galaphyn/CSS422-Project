@@ -103,7 +103,7 @@ _ralloc
 		ADD		R4, R1
 		
 		;array[leftIndex]
-		LDRH	R5, [R1]	;Loads halfword containing size and if in use
+		LDRH	R5, [R1] ;Loads halfword containing size and if in use
 		;array[middleIndex]
 		LDRH	R6, [R4]
 		
@@ -112,13 +112,12 @@ _ralloc
 		CMP		R0, R7
 		BLS		enough_space
 		
-		;;For chunks larger than half the max size
 		;And if array[leftIndex]%2 == 0
 		AND 	R7, R5, #1
 		CMP		R7, #0
 		BNE		set_invalid
-		;And if	
-		;array[leftIndex] >= size
+		
+		;And if	array[leftIndex] >= size
 		CMP		R5, R0
 		BLO		set_invalid
 		
@@ -129,7 +128,7 @@ _ralloc
 				
 		;((left - mcb_top) * 16) + heap_top
 		LDR		R0, =MCB_TOP
-		SUB		R0, R1, R0		;Left(R1) - top(R0)
+		SUB		R0, R1, R0 ;Left(R1) - top(R0)
 		LSL		R0, R0, #4	
 		LDR		R7, =HEAP_TOP
 		ADD		R0, R0, R7
@@ -234,7 +233,7 @@ go_left
 		
 		; return was NOT invalid
 		LDR R7, =INVALID
-		CMP		R11, R7	; R10 stores temporary return value
+		CMP		R11, R7	;
 		BNE		ralloc_valid
 
 check_right
@@ -264,7 +263,7 @@ go_right
 		POP		{R0-R6, LR}
 		
 		LDR R7, =INVALID
-		CMP		R11, R7	; R10 stores temporary return value
+		CMP		R11, R7
 		BEQ		ralloc_return
 		
 ralloc_valid
@@ -330,7 +329,7 @@ _rfree
 		CMP		R4, #0
 		BEQ		rfree_return
 		
-		;Decrement to mark as now empty
+		;Decrement to mark as now empty.
 		SUB		R1, R1, #1
 		STRH	R1, [R0]
 		

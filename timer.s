@@ -29,7 +29,7 @@ _timer_init
 		
 		LDR 	R0, =STRELOAD
 		LDR 	R1, =STRELOAD_MX
-		STR 	R1, [R0] ;Load max time(?I think?) that the alarm runs for? 
+		STR 	R1, [R0] ;Load max time that the alarm runs for 
 	
 		MOV		pc, lr		; return to Reset_Handler
 
@@ -52,7 +52,7 @@ _timer_start
 		LDR 	R2, =STCURR_CLR ;Retrieve clear value of 0x00000000
 		STR 	R2, [R1] ;Clear STCURRENT
 		
-		MOV 	R11, R0 ;Store seconds left in R11 since R0-3 and 12 get reset on return
+		;MOV 	R11, R0 ;Store seconds left in R11 since R0-3 and 12 get reset on return
 		MOV		pc, lr		; return to SVC_Handler
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -100,7 +100,7 @@ _signal_handler
 		BEQ 	update_handler
 	
 return
-		MOV 	R11, R0
+		;MOV 	R11, R0
 		MOV		pc, lr		; return to Reset_Handler
 		
 update_handler

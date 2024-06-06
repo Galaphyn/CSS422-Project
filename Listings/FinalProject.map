@@ -277,15 +277,15 @@ Image Symbol Table
     .ARM.Collect$$rtexit$$00000003           0x000002c0   Section        4  rtexit2.o(.ARM.Collect$$rtexit$$00000003)
     .ARM.Collect$$rtexit$$00000004           0x000002c4   Section        6  rtexit2.o(.ARM.Collect$$rtexit$$00000004)
     $v0                                      0x000002cc   Number         0  stdlib.o(.text)
-    .text                                    0x000002cc   Section      126  stdlib.o(.text)
-    $v0                                      0x0000034c   Number         0  svc.o(.text)
-    .text                                    0x0000034c   Section       72  svc.o(.text)
-    $v0                                      0x00000394   Number         0  timer.o(.text)
-    .text                                    0x00000394   Section      124  timer.o(.text)
-    $v0                                      0x00000410   Number         0  heap.o(.text)
-    .text                                    0x00000410   Section      600  heap.o(.text)
-    $v0                                      0x00000668   Number         0  startup_tm4c129.o(.text)
-    .text                                    0x00000668   Section      388  startup_tm4c129.o(.text)
+    .text                                    0x000002cc   Section      120  stdlib.o(.text)
+    $v0                                      0x00000344   Number         0  svc.o(.text)
+    .text                                    0x00000344   Section       72  svc.o(.text)
+    $v0                                      0x0000038c   Number         0  timer.o(.text)
+    .text                                    0x0000038c   Section      120  timer.o(.text)
+    $v0                                      0x00000404   Number         0  heap.o(.text)
+    .text                                    0x00000404   Section      600  heap.o(.text)
+    $v0                                      0x0000065c   Number         0  startup_tm4c129.o(.text)
+    .text                                    0x0000065c   Section      400  startup_tm4c129.o(.text)
     .text                                    0x000007ec   Section      138  rt_memcpy_v6.o(.text)
     .text                                    0x00000876   Section        0  heapauxi.o(.text)
     .text                                    0x0000087c   Section      100  rt_memcpy_w.o(.text)
@@ -401,28 +401,28 @@ Image Symbol Table
     _bzero                                   0x000002cd   Thumb Code     0  stdlib.o(.text)
     _strncpy                                 0x000002e9   Thumb Code     0  stdlib.o(.text)
     _malloc                                  0x00000305   Thumb Code     0  stdlib.o(.text)
-    _free                                    0x00000317   Thumb Code     0  stdlib.o(.text)
-    _alarm                                   0x00000327   Thumb Code     0  stdlib.o(.text)
-    _signal                                  0x00000339   Thumb Code     0  stdlib.o(.text)
-    _syscall_table_init                      0x0000034d   Thumb Code     0  svc.o(.text)
-    _syscall_table_jump                      0x00000371   Thumb Code     0  svc.o(.text)
-    _timer_init                              0x00000395   Thumb Code     0  timer.o(.text)
-    _timer_start                             0x000003a7   Thumb Code     0  timer.o(.text)
-    _timer_update                            0x000003c3   Thumb Code     0  timer.o(.text)
-    _signal_handler                          0x000003e7   Thumb Code     0  timer.o(.text)
-    _heap_init                               0x00000411   Thumb Code     0  heap.o(.text)
-    _kalloc                                  0x00000431   Thumb Code     0  heap.o(.text)
-    _kfree                                   0x00000591   Thumb Code     0  heap.o(.text)
-    Reset_Handler                            0x00000669   Thumb Code    44  startup_tm4c129.o(.text)
-    NMI_Handler                              0x00000695   Thumb Code     2  startup_tm4c129.o(.text)
-    HardFault_Handler                        0x00000697   Thumb Code     2  startup_tm4c129.o(.text)
-    MemManage_Handler                        0x00000699   Thumb Code     2  startup_tm4c129.o(.text)
-    BusFault_Handler                         0x0000069b   Thumb Code     2  startup_tm4c129.o(.text)
-    UsageFault_Handler                       0x0000069d   Thumb Code     2  startup_tm4c129.o(.text)
-    SVC_Handler                              0x0000069f   Thumb Code    12  startup_tm4c129.o(.text)
-    DebugMon_Handler                         0x000006ab   Thumb Code     2  startup_tm4c129.o(.text)
-    PendSV_Handler                           0x000006ad   Thumb Code     2  startup_tm4c129.o(.text)
-    SysTick_Handler                          0x000006af   Thumb Code    12  startup_tm4c129.o(.text)
+    _free                                    0x00000315   Thumb Code     0  stdlib.o(.text)
+    _alarm                                   0x00000325   Thumb Code     0  stdlib.o(.text)
+    _signal                                  0x00000335   Thumb Code     0  stdlib.o(.text)
+    _syscall_table_init                      0x00000345   Thumb Code     0  svc.o(.text)
+    _syscall_table_jump                      0x00000369   Thumb Code     0  svc.o(.text)
+    _timer_init                              0x0000038d   Thumb Code     0  timer.o(.text)
+    _timer_start                             0x0000039f   Thumb Code     0  timer.o(.text)
+    _timer_update                            0x000003b9   Thumb Code     0  timer.o(.text)
+    _signal_handler                          0x000003dd   Thumb Code     0  timer.o(.text)
+    _heap_init                               0x00000405   Thumb Code     0  heap.o(.text)
+    _kalloc                                  0x00000425   Thumb Code     0  heap.o(.text)
+    _kfree                                   0x00000585   Thumb Code     0  heap.o(.text)
+    Reset_Handler                            0x0000065d   Thumb Code    44  startup_tm4c129.o(.text)
+    NMI_Handler                              0x00000689   Thumb Code     2  startup_tm4c129.o(.text)
+    HardFault_Handler                        0x0000068b   Thumb Code     2  startup_tm4c129.o(.text)
+    MemManage_Handler                        0x0000068d   Thumb Code     2  startup_tm4c129.o(.text)
+    BusFault_Handler                         0x0000068f   Thumb Code     2  startup_tm4c129.o(.text)
+    UsageFault_Handler                       0x00000691   Thumb Code     2  startup_tm4c129.o(.text)
+    SVC_Handler                              0x00000693   Thumb Code    18  startup_tm4c129.o(.text)
+    DebugMon_Handler                         0x000006a5   Thumb Code     2  startup_tm4c129.o(.text)
+    PendSV_Handler                           0x000006a7   Thumb Code     2  startup_tm4c129.o(.text)
+    SysTick_Handler                          0x000006a9   Thumb Code    18  startup_tm4c129.o(.text)
     GPIOA_Handler                            0x000006bb   Thumb Code     2  startup_tm4c129.o(.text)
     GPIOB_Handler                            0x000006bd   Thumb Code     2  startup_tm4c129.o(.text)
     GPIOC_Handler                            0x000006bf   Thumb Code     2  startup_tm4c129.o(.text)
@@ -584,7 +584,7 @@ Image Symbol Table
 
 Memory Map of the image
 
-  Image Entry point : 0x00000669
+  Image Entry point : 0x0000065d
 
   Load Region LR_1 (Base: 0x00000000, Size: 0x00000b4c, Max: 0xffffffff, ABSOLUTE)
 
@@ -643,12 +643,11 @@ Memory Map of the image
     0x000002c0   0x000002c0   0x00000004   Code   RO          140    .ARM.Collect$$rtexit$$00000003  c_w.l(rtexit2.o)
     0x000002c4   0x000002c4   0x00000006   Code   RO          141    .ARM.Collect$$rtexit$$00000004  c_w.l(rtexit2.o)
     0x000002ca   0x000002ca   0x00000002   PAD
-    0x000002cc   0x000002cc   0x0000007e   Code   RO           17    .text               stdlib.o
-    0x0000034a   0x0000034a   0x00000002   PAD
-    0x0000034c   0x0000034c   0x00000048   Code   RO           22    .text               svc.o
-    0x00000394   0x00000394   0x0000007c   Code   RO           25    .text               timer.o
-    0x00000410   0x00000410   0x00000258   Code   RO           28    .text               heap.o
-    0x00000668   0x00000668   0x00000184   Code   RO           34  * .text               startup_tm4c129.o
+    0x000002cc   0x000002cc   0x00000078   Code   RO           17    .text               stdlib.o
+    0x00000344   0x00000344   0x00000048   Code   RO           22    .text               svc.o
+    0x0000038c   0x0000038c   0x00000078   Code   RO           25    .text               timer.o
+    0x00000404   0x00000404   0x00000258   Code   RO           28    .text               heap.o
+    0x0000065c   0x0000065c   0x00000190   Code   RO           34  * .text               startup_tm4c129.o
     0x000007ec   0x000007ec   0x0000008a   Code   RO           52    .text               c_w.l(rt_memcpy_v6.o)
     0x00000876   0x00000876   0x00000006   Code   RO           54    .text               c_w.l(heapauxi.o)
     0x0000087c   0x0000087c   0x00000064   Code   RO           59    .text               c_w.l(rt_memcpy_w.o)
@@ -696,16 +695,16 @@ Image component sizes
 
        364          0         40          0          4       1275   driver_keil.o
        600         18          0          0          0        416   heap.o
-       388         54        512          0      24576       6032   startup_tm4c129.o
-       126          0          0          0          0        284   stdlib.o
+       400         54        512          0      24576       6036   startup_tm4c129.o
+       120          0          0          0          0        280   stdlib.o
         72         20          0          0          0        212   svc.o
         36          0          0          4          0       1399   system_tm4c129.o
-       124         22          0          0          0        244   timer.o
+       120         22          0          0          0        244   timer.o
 
     ----------------------------------------------------------------------
       1714        114        584          4      24584       9862   Object Totals
          0          0         32          0          0          0   (incl. Generated)
-         4          0          0          0          4          0   (incl. Padding)
+         2          0          0          0          4          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 

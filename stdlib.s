@@ -66,7 +66,7 @@ _malloc
 		
 		; resume registers
 		POP 	{R4-R10, lr}
-		MOV     R0, R11 ;Bring back our return address since R0 resets on return from svc
+		;MOV     R0, R11 ;Bring back our return address since R0 resets on return from svc
 		MOV		pc, lr
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -107,7 +107,7 @@ _alarm
 		
 		; resume registers
 		POP 	{R4-R10, lr} ;Restore registers
-		MOV		R0, R11 ;return int
+		;MOV		R0, R11 ;return int
 		MOV		pc, lr
 			
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -129,7 +129,7 @@ _signal
 		
 		; resume registers
 		POP 	{R4-R10, lr} ;Restore registers
-		MOV 	R0, R11 ;Return pointer
+		;MOV 	R0, R11 ;Return pointer
 		MOV		pc, lr
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
